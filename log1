@@ -1,0 +1,162 @@
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+[2016-10-10 23:13:37,074] Making new env: CartPole-v0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 0 with properties:
+name: Tesla M40
+major: 5 minor: 2 memoryClockRate (GHz) 1.112
+pciBusID 0000:08:00.0
+Total memory: 22.50GiB
+Free memory: 22.30GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x2664520
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 1 with properties:
+name: Tesla M40
+major: 5 minor: 2 memoryClockRate (GHz) 1.112
+pciBusID 0000:09:00.0
+Total memory: 22.50GiB
+Free memory: 21.82GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x2ae43f0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 2 with properties:
+name: Tesla M40
+major: 5 minor: 2 memoryClockRate (GHz) 1.112
+pciBusID 0000:83:00.0
+Total memory: 22.50GiB
+Free memory: 720.27MiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x2f63dd0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 3 with properties:
+name: Tesla M40
+major: 5 minor: 2 memoryClockRate (GHz) 1.112
+pciBusID 0000:84:00.0
+Total memory: 22.50GiB
+Free memory: 7.91GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x33e6fc0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 4 with properties:
+name: Tesla M40
+major: 5 minor: 2 memoryClockRate (GHz) 1.112
+pciBusID 0000:87:00.0
+Total memory: 22.50GiB
+Free memory: 4.75GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 0 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 0 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 0 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 1 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 1 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 1 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 2 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 2 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 3 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 3 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 4 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:855] cannot enable peer access from device ordinal 4 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:972] DMA: 0 1 2 3 4
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 0:   Y Y N N N
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 1:   Y Y N N N
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 2:   N N Y Y Y
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 3:   N N Y Y Y
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 4:   N N Y Y Y
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla M40, pci bus id: 0000:08:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla M40, pci bus id: 0000:09:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla M40, pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla M40, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:4) -> (device: 4, name: Tesla M40, pci bus id: 0000:87:00.0)
+/usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/gradients.py:90: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+Iteration 1: Average Return = 15.98
+Iteration 2: Average Return = 18.2
+Iteration 3: Average Return = 17.95
+Iteration 4: Average Return = 18.52
+Iteration 5: Average Return = 21.13
+Iteration 6: Average Return = 21.4
+Iteration 7: Average Return = 22.05
+Iteration 8: Average Return = 26.63
+Iteration 9: Average Return = 25.41
+Iteration 10: Average Return = 26.29
+Iteration 11: Average Return = 28.31
+Iteration 12: Average Return = 29.06
+Iteration 13: Average Return = 32.05
+Iteration 14: Average Return = 36.27
+Iteration 15: Average Return = 37.18
+Iteration 16: Average Return = 40.38
+Iteration 17: Average Return = 40.54
+Iteration 18: Average Return = 38.43
+Iteration 19: Average Return = 40.27
+Iteration 20: Average Return = 41.02
+Iteration 21: Average Return = 43.96
+Iteration 22: Average Return = 46.96
+Iteration 23: Average Return = 43.15
+Iteration 24: Average Return = 46.69
+Iteration 25: Average Return = 47.72
+Iteration 26: Average Return = 46.54
+Iteration 27: Average Return = 50.63
+Iteration 28: Average Return = 45.44
+Iteration 29: Average Return = 47.93
+Iteration 30: Average Return = 50.27
+Iteration 31: Average Return = 52.05
+Iteration 32: Average Return = 48.75
+Iteration 33: Average Return = 49.64
+Iteration 34: Average Return = 56.77
+Iteration 35: Average Return = 53.0
+Iteration 36: Average Return = 55.39
+Iteration 37: Average Return = 55.1
+Iteration 38: Average Return = 56.49
+Iteration 39: Average Return = 55.04
+Iteration 40: Average Return = 59.53
+Iteration 41: Average Return = 59.48
+Iteration 42: Average Return = 57.38
+Iteration 43: Average Return = 57.33
+Iteration 44: Average Return = 62.37
+Iteration 45: Average Return = 62.83
+Iteration 46: Average Return = 63.38
+Iteration 47: Average Return = 58.22
+Iteration 48: Average Return = 62.71
+Iteration 49: Average Return = 60.99
+Iteration 50: Average Return = 62.55
+Iteration 51: Average Return = 64.62
+Iteration 52: Average Return = 61.47
+Iteration 53: Average Return = 63.96
+Iteration 54: Average Return = 61.88
+Iteration 55: Average Return = 62.45
+Iteration 56: Average Return = 65.7
+Iteration 57: Average Return = 66.37
+Iteration 58: Average Return = 69.79
+Iteration 59: Average Return = 67.52
+Iteration 60: Average Return = 70.96
+Iteration 61: Average Return = 69.57
+Iteration 62: Average Return = 72.97
+Iteration 63: Average Return = 73.39
+Iteration 64: Average Return = 77.56
+Iteration 65: Average Return = 76.38
+Iteration 66: Average Return = 77.8
+Iteration 67: Average Return = 82.6
+Iteration 68: Average Return = 72.24
+Iteration 69: Average Return = 86.62
+Iteration 70: Average Return = 79.13
+Iteration 71: Average Return = 95.77
+Iteration 72: Average Return = 89.85
+Iteration 73: Average Return = 90.2
+Iteration 74: Average Return = 97.81
+Iteration 75: Average Return = 91.58
+Iteration 76: Average Return = 105.27
+Iteration 77: Average Return = 107.48
+Iteration 78: Average Return = 122.92
+Iteration 79: Average Return = 122.58
+Iteration 80: Average Return = 132.24
+Iteration 81: Average Return = 152.31
+Iteration 82: Average Return = 153.18
+Iteration 83: Average Return = 160.9
+Iteration 84: Average Return = 159.84
+Iteration 85: Average Return = 159.08
+Iteration 86: Average Return = 168.52
+Iteration 87: Average Return = 167.83
+Iteration 88: Average Return = 173.56
+Iteration 89: Average Return = 179.28
+Iteration 90: Average Return = 180.33
+Iteration 91: Average Return = 177.02
+Iteration 92: Average Return = 183.25
+Iteration 93: Average Return = 185.63
+Iteration 94: Average Return = 191.36
+Iteration 95: Average Return = 193.14
+Iteration 96: Average Return = 197.17
+Solve at 96 iterations, which equals 9600 episodes.

@@ -3,6 +3,9 @@ import numpy as np
 
 class CategoricalPolicy(object):
     def __init__(self, in_dim, out_dim, hidden_dim, optimizer, session):
+	self.in_dim = in_dim
+	self.out_dim = out_dim
+	self.hidden_dim = hidden_dim
 
         # Placeholder Inputs
         self._observations = tf.placeholder(tf.float32, shape=[None, in_dim], name="observations")
@@ -28,6 +31,9 @@ class CategoricalPolicy(object):
         """
         # YOUR CODE HERE >>>>>>
         # probs = ???
+        self.f1 = tf.contrib.layers.fully_connected(inputs=self._observations, num_outputs=self.hidden_dim, activation_fn=tf.tanh)
+        self.f2 = tf.contrib.layers.fully_connected(inputs=self.f1, num_outputs=self.out_dim, activation_fn=None)
+        probs = tf.nn.softmax(self.f2)
         # <<<<<<<<
 
         # --------------------------------------------------
@@ -41,7 +47,7 @@ class CategoricalPolicy(object):
         # Shape of probs: [n_timestep_per_iter, n_actions]
 
         # 1. Find first index of action for each timestep in flattened vector form
-        #    e.g., if we have n_timestep_per_iter = 2, then we'll get [0, 2]
+        #    e.g., if we have n_timestep_per_iter = 2 and action space = 2, then we'll get [0, 2]
         #    0 is the first index of action for timestep t = 0, and 2 is the first index of action for timestep t = 1
         action_idxs_flattened = tf.range(0, tf.shape(probs)[0]) * tf.shape(probs)[1]
 
@@ -70,6 +76,7 @@ class CategoricalPolicy(object):
         """
         # YOUR CODE HERE >>>>>>
         # surr_loss = ???
+	surr_loss = -tf.reduce_mean(tf.mul(log_prob, self._advantages))	# minus means "maximize"	
         # <<<<<<<<
 
         grads_and_vars = self._opt.compute_gradients(surr_loss)
