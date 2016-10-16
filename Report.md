@@ -35,6 +35,11 @@ a = r - b
 ```
 
 ## Baseline or not?
+Here we directly plot the average return curve.
+<p align="center"><img src="https://github.com/JamesChuanggg/homework2/blob/master/part5.png?raw=true" width="800"></p> 
+Surprisely without baseline method we only took 71 iterations to reach the goal whilei it took 96 iterations with baseline.
+Since we play a very simple game, so it does not take too much time to train. However, within the period we need to train two models if we apply baseline method. My hypothesis is that baseline model is not that kind of stable at the very first which lead to the slower converge. 
+
 
 ## Why we need to normalize the advantages?
 In practice it is important to normalize advantage function. One good idea is to “standardize” these returns (e.g. subtract mean, divide by standard deviation) before we plug them into backprop. 
